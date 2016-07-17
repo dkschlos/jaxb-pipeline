@@ -1,0 +1,9 @@
+<pipeline>
+    <loadFakeRecords>
+        <record name="test" value="1" />
+        <record name="test2" value="42" />
+    </loadFakeRecords>
+    <loadRecordsFromCsv fileName="src/test/resources/fakeRecords.csv" />
+    <removeRecordsWithValueGreaterThan threshold="20" />
+    <writeToConsole />
+</pipeline>
